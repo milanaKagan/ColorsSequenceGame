@@ -1,0 +1,72 @@
+*, *::before, *::after {
+            box-sizing: border-box;
+  }
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    flex-direction: column;
+    background-color: #928b8b4a;
+}
+
+#board {
+    background: #ffffff;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 0px;
+    border-radius: 8px;
+    border: none;
+    transition: background 300ms;
+
+}
+
+#board.correct {
+    background: green;
+    pointer-events: none;
+}
+#board.wrong {
+    background: orangered;
+    pointer-events: none;
+}
+#play{
+    background-color: green;
+    width: 150px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold; 
+    border: none;
+    color: white;
+    outline: none;
+    border: none;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.55);
+}
+
+button:active{
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.55) inset;
+}
+
+#board button {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #ffffff;
+    outline: none;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.55);
+}
